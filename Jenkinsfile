@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        docker{image "node"} // o agente que vai executar é um agente docker que tenha a imagem node
+        docker{image "node"}
     }
     stages{
         stage('Build'){
