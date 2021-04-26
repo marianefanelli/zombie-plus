@@ -1,0 +1,34 @@
+{
+  "name": "zombie-plus",
+  "version": "1.0.0",
+  "description": "projeto de testes automatizados com nightwatch.js",
+  "main": "index.js",
+  "scripts": {
+    "test:login": ".\\node_modules\\.bin\\nightwatch.cmd --group login --env=stage",
+    "test:cadastro": ".\\node_modules\\.bin\\nightwatch.cmd --group cadastro",
+    "test:busca": ".\\node_modules\\.bin\\nightwatch.cmd --group busca",
+    "test:nologin": ".\\node_modules\\.bin\\nightwatch.cmd --skipgroup login",
+    "test:smoke": ".\\node_modules\\.bin\\nightwatch.cmd --tag smoke",
+    "test:headless": ".\\node_modules\\.bin\\nightwatch.cmd --group cadastro --env=headless",
+    "test": ".\\node_modules\\.bin\\nightwatch.cmd"
+  },
+  "keywords": [
+    "qaninja",
+    "nodejs",
+    "webdriver",
+    "nightwatch",
+    "geckodriver",
+    "chromedriver"
+  ],
+  "author": "Mariane Fanelli",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-preset-es2015": "^6.24.1",
+    "chromedriver": "^90.0.0",
+    "geckodriver": "^1.22.3",
+    "nightwatch": "^1.6.3",
+    "pg": "^8.6.0"
+  }
+}
