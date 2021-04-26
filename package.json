@@ -10,6 +10,7 @@
     "test:nologin": ".\\node_modules\\.bin\\nightwatch.cmd --skipgroup login",
     "test:smoke": ".\\node_modules\\.bin\\nightwatch.cmd --tag smoke",
     "test:headless": ".\\node_modules\\.bin\\nightwatch.cmd --group cadastro --env=headless",
+    "test:jenkins": "./node_modules/.bin/nightwatch --tag smoke --env=headless",
     "test": ".\\node_modules\\.bin\\nightwatch.cmd"
   },
   "keywords": [
