@@ -1,11 +1,17 @@
 pipeline{
-    agent any
+    agent{
+        docker{image "node"} // o agente que vai executar é um agente docker que tenha a imagem node
+    }
     stages{
         stage('Build'){
-            sh "npm install"
+            steps{
+                sh "npm install"
+            }      
         }
         stage('Tests'){
-            sh "npm test"
+            steps{
+                sh "npm test"
+            }
         }
     }
 }
